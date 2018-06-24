@@ -1,0 +1,179 @@
+{
+  "project_info": {
+    "project_number": "96860775274",
+    "firebase_url": "https://ultimate-backup-b8a34.firebaseio.com",
+    "project_id": "ultimate-backup-b8a34",
+    "storage_bucket": "ultimate-backup-b8a34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96860775274:android:1e6e13f1aeccc627",
+        "android_client_info": {
+          "package_name": "org.mike.ultimatebackup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96860775274-dbu8unq7l8k5dp86poao52cnbu6n4bsi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.mike.ultimatebackup",
+            "certificate_hash": "86242ffc384dd112a49f7446f20cfc939ccd36d9"
+          }
+        },
+        {
+          "client_id": "96860775274-jrr7njmi4rvv4b3moh3m581kit1jpshr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDcmoIdT0KXykB36NyIVsm3RZzXBxbVjA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "96860775274-jrr7njmi4rvv4b3moh3m581kit1jpshr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96860775274:android:dcfa776ffefa261a",
+        "android_client_info": {
+          "package_name": "org.mike.ultimatebackuppro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96860775274-jrr7njmi4rvv4b3moh3m581kit1jpshr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDcmoIdT0KXykB36NyIVsm3RZzXBxbVjA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96860775274:android:943ef7e1b5c79243",
+        "android_client_info": {
+          "package_name": "com.HEbackup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96860775274-jrr7njmi4rvv4b3moh3m581kit1jpshr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDcmoIdT0KXykB36NyIVsm3RZzXBxbVjA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96860775274:android:ef098e9b630f87a3",
+        "android_client_info": {
+          "package_name": "org.ultimatetoolsil.mike.note"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96860775274-jrr7njmi4rvv4b3moh3m581kit1jpshr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDcmoIdT0KXykB36NyIVsm3RZzXBxbVjA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96860775274:android:be405ab4e71253d2",
+        "android_client_info": {
+          "package_name": "org.ultimatetoolsil.trackeru"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96860775274-jrr7njmi4rvv4b3moh3m581kit1jpshr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDcmoIdT0KXykB36NyIVsm3RZzXBxbVjA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

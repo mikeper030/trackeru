@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceCategory android:title="@string/account">
+
+    <Preference
+        android:key="account"
+        android:title="@string/user_details2">
+    <intent android:targetPackage="org.ultimatetoolsil.trackeru"
+        android:targetClass="org.ultimatetoolsil.trackeru.MyAccount"
+        android:data="true"/>
+    </Preference>
+
+
+</PreferenceCategory>
+    <PreferenceCategory android:title="@string/battery1">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="absaver"
+            android:title="@string/auto_bat" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="bsaver"
+            android:title="@string/pw_m" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/general">
+     <Preference
+         android:key="remove"
+         android:title="@string/remove_ads"
+
+         />
+        <Preference
+            android:key="policy"
+            android:title="@string/privacy_policy"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

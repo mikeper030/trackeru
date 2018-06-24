@@ -1,0 +1,72 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:windowBackground"
+    tools:context=".MainActivity">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="55dp">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/colorPrimary">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="20sp"
+               android:text="@string/user_details"
+               android:layout_centerHorizontal="true"
+               />
+       </RelativeLayout>
+
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:paddingLeft="@dimen/activity_horizontal_margin"
+           android:paddingRight="@dimen/activity_horizontal_margin"
+           android:paddingTop="30dp"
+           android:paddingBottom="5dp">
+           <TextView
+               android:id="@+id/stat"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:text="@string/press_group"
+               android:textSize="18sp"
+               />
+           <ListView
+               android:id="@+id/ListView2"
+               android:layout_height="match_parent"
+               android:layout_width="match_parent"
+               android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+               android:divider="@android:color/darker_gray"
+               android:dividerHeight="0.5dp" >
+
+
+           </ListView>
+
+       </RelativeLayout>
+   </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/group_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom|center"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2883974575291426/5812076995">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>
+
+</RelativeLayout>

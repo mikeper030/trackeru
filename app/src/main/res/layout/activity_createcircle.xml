@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/add_users"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.145" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="269dp"
+            android:layout_height="54dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.289">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edittextcirclename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/example" />
+        </android.support.design.widget.TextInputLayout>
+
+        <com.dd.CircularProgressButton
+            android:id="@+id/save1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/cpb_white"
+            android:textSize="15sp"
+            app:cpb_cornerRadius="48dp"
+            app:cpb_textComplete="הושלם"
+            app:cpb_textError="שגיאה נסה שוב"
+            app:cpb_textIdle="שמור"
+            fbutton:layout_constraintBottom_toBottomOf="parent"
+            fbutton:layout_constraintEnd_toEndOf="parent"
+            fbutton:layout_constraintStart_toStartOf="parent"
+            fbutton:layout_constraintTop_toTopOf="parent"
+            fbutton:layout_constraintVertical_bias="0.678" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/buttonshare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/share_code2"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            fbutton:buttonColor="@color/colorPrimary"
+            fbutton:layout_constraintBottom_toBottomOf="parent"
+            fbutton:layout_constraintEnd_toEndOf="parent"
+            fbutton:layout_constraintStart_toStartOf="parent"
+            fbutton:layout_constraintTop_toTopOf="parent"
+            fbutton:layout_constraintVertical_bias="0.85"
+            fbutton:shadowColor="@color/colorPrimary"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/buttonsms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/add_fr_contact"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            fbutton:buttonColor="@color/colorPrimary"
+            fbutton:layout_constraintBottom_toBottomOf="parent"
+            fbutton:layout_constraintEnd_toEndOf="parent"
+            fbutton:layout_constraintHorizontal_bias="0.502"
+            fbutton:layout_constraintStart_toStartOf="parent"
+            fbutton:layout_constraintTop_toTopOf="parent"
+            fbutton:layout_constraintVertical_bias="0.967"
+            fbutton:shadowColor="@color/colorPrimary"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp" />
+
+        <TextView
+            android:id="@+id/textadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/add_frieds"
+            android:visibility="gone"
+            fbutton:layout_constraintBottom_toBottomOf="parent"
+            fbutton:layout_constraintEnd_toEndOf="parent"
+            fbutton:layout_constraintHorizontal_bias="0.502"
+            fbutton:layout_constraintStart_toStartOf="parent"
+            fbutton:layout_constraintTop_toTopOf="parent"
+            fbutton:layout_constraintVertical_bias="0.758" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile3"
+            android:layout_width="83dp"
+            android:layout_height="84dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/profile"
+            app:border_color="#808080"
+            app:border_width="2dp"
+            app:layout_collapseMode="parallax"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.48000002" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:indeterminate="true"
+            android:visibility="gone"
+            fbutton:layout_constraintBottom_toBottomOf="parent"
+            fbutton:layout_constraintEnd_toEndOf="parent"
+            fbutton:layout_constraintHorizontal_bias="0.83"
+            fbutton:layout_constraintStart_toStartOf="parent"
+            fbutton:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/rotate"
+            android:layout_width="57dp"
+            android:layout_height="98dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            fbutton:layout_constraintBottom_toBottomOf="parent"
+            fbutton:layout_constraintEnd_toEndOf="parent"
+            fbutton:layout_constraintHorizontal_bias="0.25"
+            fbutton:layout_constraintStart_toStartOf="parent"
+            fbutton:layout_constraintTop_toTopOf="parent"
+            fbutton:layout_constraintVertical_bias="0.47000003"
+            fbutton:srcCompat="@drawable/rotatecursor" />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        app:expanded="false"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/pname2"
+                    android:textSize="15sp"
+                    android:layout_below="@+id/profile2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"/>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    app:layout_collapseMode="parallax"
+                    app:border_color="#808080"
+                    app:border_width="2dp"
+                    android:src="@drawable/profile"
+                    />
+
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar2"
+
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@null"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

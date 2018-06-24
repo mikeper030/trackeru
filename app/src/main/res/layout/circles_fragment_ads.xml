@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       >
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/listnoimage"
+            android:visibility="gone"
+            android:src="@drawable/group"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listnotext"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/listnoimage"
+            android:text="@string/no_circles_found"/>
+        <ListView
+            android:id="@+id/ListView"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="0.5dp"
+            android:paddingBottom="50dp">
+
+
+        </ListView>
+    </RelativeLayout>
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu_red"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="60dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        fab:menu_backgroundColor="#ccffffff"
+
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_singleLine="true">
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_group_white_24dp"
+            fab:fab_label="@string/join"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+
+            android:id="@+id/fab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_add_white_24dp"
+            fab:fab_label="@string/create"
+            fab:fab_size="mini" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/circles_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom|center"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2883974575291426/5812076995">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

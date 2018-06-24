@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.ultimatetoolsil.trackeru.createprofile">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_margin="8dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/create_profile"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayout4"
+                android:layout_width="288dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                fbutton:layout_constraintBottom_toBottomOf="parent"
+                fbutton:layout_constraintEnd_toEndOf="parent"
+                fbutton:layout_constraintStart_toStartOf="parent"
+                fbutton:layout_constraintTop_toTopOf="parent"
+                fbutton:layout_constraintVertical_bias="0.110000014">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/nm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/full_name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profileimg"
+                android:layout_width="106dp"
+                android:layout_height="102dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/profile"
+                app:border_color="#808080"
+                app:border_width="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.63" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+
+                android:text="@string/up_pr_pic"
+                android:textColor="@color/white"
+                fbutton:buttonColor="@color/colorPrimary"
+
+                fbutton:cornerRadius="5dp"
+                fbutton:layout_constraintBottom_toBottomOf="parent"
+                fbutton:layout_constraintEnd_toEndOf="parent"
+                fbutton:layout_constraintStart_toStartOf="parent"
+                fbutton:layout_constraintTop_toTopOf="parent"
+                fbutton:layout_constraintVertical_bias="0.844"
+                fbutton:shadowColor="@color/colorPrimary"
+                fbutton:shadowEnabled="true"
+                fbutton:shadowHeight="5dp" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/next"
+                android:layout_width="63dp"
+                android:layout_height="37dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/next"
+                android:textColor="@color/white"
+                fbutton:buttonColor="@color/colorPrimary"
+                fbutton:layout_constraintBottom_toBottomOf="parent"
+                fbutton:layout_constraintEnd_toEndOf="parent"
+                fbutton:layout_constraintHorizontal_bias="0.969"
+                fbutton:layout_constraintStart_toStartOf="parent"
+                fbutton:layout_constraintTop_toTopOf="parent"
+                fbutton:layout_constraintVertical_bias="1.0"
+                fbutton:shadowColor="@color/colorPrimary"
+                fbutton:shadowEnabled="true"
+                fbutton:shadowHeight="5dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/phone"
+                android:layout_width="288dp"
+                android:layout_height="52dp"
+
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                fbutton:layout_constraintBottom_toBottomOf="parent"
+                fbutton:layout_constraintEnd_toEndOf="parent"
+                fbutton:layout_constraintStart_toStartOf="parent"
+                fbutton:layout_constraintTop_toTopOf="parent"
+                fbutton:layout_constraintVertical_bias="0.249">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/ph"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/phone"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                fbutton:layout_constraintBottom_toBottomOf="parent"
+                fbutton:layout_constraintEnd_toStartOf="@+id/upload"
+                fbutton:layout_constraintHorizontal_bias="0.461"
+                fbutton:layout_constraintStart_toStartOf="parent"
+                fbutton:layout_constraintTop_toBottomOf="@+id/rrotate"
+                fbutton:layout_constraintVertical_bias="0.377" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayout2"
+                android:layout_width="288dp"
+                android:layout_height="54dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                fbutton:layout_constraintBottom_toBottomOf="parent"
+                fbutton:layout_constraintEnd_toEndOf="parent"
+                fbutton:layout_constraintStart_toStartOf="parent"
+                fbutton:layout_constraintTop_toTopOf="parent"
+                fbutton:layout_constraintVertical_bias="0.39">
+
+                <android.support.design.widget.TextInputEditText
+                   android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/username" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageButton
+                android:id="@+id/rrotate"
+                android:layout_width="57dp"
+                android:layout_height="79dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                fbutton:layout_constraintBottom_toBottomOf="parent"
+                fbutton:layout_constraintEnd_toEndOf="parent"
+                fbutton:layout_constraintHorizontal_bias="0.13"
+                fbutton:layout_constraintStart_toStartOf="parent"
+                fbutton:layout_constraintTop_toTopOf="parent"
+                fbutton:layout_constraintVertical_bias="0.62"
+                fbutton:srcCompat="@drawable/rotatecursor" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>
+
+
+
+

@@ -1,0 +1,231 @@
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoPanelHeight="35dp"
+    sothree:umanoShadowHeight="4dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|start"
+            android:layout_marginBottom="40dp"
+            android:alpha=".30"
+            android:drawableBottom="@mipmap/ic_navigation_black_24dp"
+            android:background="@android:drawable/btn_default" />
+    </fragment>
+
+</RelativeLayout>
+
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="#757678">
+       <ImageView
+           android:layout_gravity="center_horizontal"
+           android:layout_centerInParent="true"
+           android:gravity="center"
+           style="?android:attr/listSeparatorTextViewStyle"
+           android:id="@+id/separator"
+           android:src="@drawable/expandarrow"
+           android:rotation="180"
+            android:background="#757678"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+
+
+           />
+   </RelativeLayout>
+
+    <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:id="@+id/separator2"
+        android:text="@string/circles_display"
+        android:layout_gravity="right"
+        android:scaleType="fitCenter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#757678"
+        android:textColor="#f5c227" />
+    <ProgressBar
+        android:id="@+id/drawerpb"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|top"
+
+        android:visibility="gone" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerHorizontal="true"
+
+                android:layout_below="@+id/noitems"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/noitemstext"
+                android:textAlignment="center"
+                android:text="@string/no_circles_found"/>
+            <ImageView
+                android:id="@+id/noitems"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/group"/>
+            <ListView
+                android:id="@+id/drawerelist"
+                android:layout_height="250dp"
+
+                android:layout_width="match_parent"
+                android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="0.5dp">
+
+            </ListView>
+        </RelativeLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:scaleType="fitCenter"
+    android:text="@string/view"
+    android:background="#757678"
+    android:textColor="#f5c227"
+    />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:text="@string/polyline"
+            android:layout_alignParentRight="true"
+
+            />
+        <CheckBox
+           android:id="@+id/polyline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:scaleType="fitCenter"
+                android:text="@string/map_type"
+                android:background="#757678"
+                android:textColor="#f5c227"
+                />
+          <RelativeLayout
+              android:layout_width="wrap_content"
+              android:layout_height="50dp"
+              android:orientation="horizontal">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentStart="true"
+                 android:layout_gravity="start"
+                  android:textSize="16sp"
+                  android:text="@string/sattelite"/>
+              <CheckBox
+                  android:id="@+id/satellite"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+
+                  android:layout_alignParentEnd="true"
+                  android:layout_alignParentRight="true"/>
+          </RelativeLayout>
+          <RelativeLayout
+              android:layout_width="wrap_content"
+              android:layout_height="50dp"
+              android:orientation="horizontal">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_alignParentLeft="true"
+                  android:layout_alignParentStart="true"
+                  android:layout_height="wrap_content"
+                  android:textSize="16sp"
+                  android:text="@string/hyb"/>
+              <CheckBox
+                  android:id="@+id/hybrid"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+
+                  android:layout_alignParentEnd="true"
+                  android:layout_alignParentRight="true"/>
+          </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="50dp"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentStart="true"
+                   android:layout_height="wrap_content"
+                   android:textSize="16sp"
+                   android:text="@string/terrain"/>
+               <CheckBox
+                   android:id="@+id/terrain"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+
+                   android:layout_alignParentEnd="true"
+                   android:layout_alignParentRight="true"/>
+           </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/standard"/>
+                <CheckBox
+                    android:id="@+id/normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+</LinearLayout>
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

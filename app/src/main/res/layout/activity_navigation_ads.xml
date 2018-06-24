@@ -1,0 +1,56 @@
+<android.support.v7.widget.GridLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    app:columnCount="1"
+    app:alignmentMode="alignBounds"
+    app:orientation="horizontal"
+    app:useDefaultMargins="true">
+
+    <TextView
+        android:id="@+id/from_label"
+        app:layout_gravity="fill_horizontal"
+        android:text="@string/from"
+        android:textColor="?android:textColorSecondary" />
+
+    <AutoCompleteTextView
+        android:id="@+id/from"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_gravity="fill_horizontal"
+        android:completionThreshold="3" />
+
+    <TextView
+        android:id="@+id/to_label"
+        app:layout_gravity="fill_horizontal"
+        android:text="@string/to"
+        android:textColor="?android:textColorSecondary" />
+
+    <AutoCompleteTextView
+        android:id="@+id/to"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_gravity="fill_horizontal"
+        android:completionThreshold="3" />
+
+    <Button
+        android:id="@+id/load_directions"
+        app:layout_gravity="fill_horizontal"
+        android:text="@string/load_direction"
+        app:layout_columnSpan="@integer/create_account_pane_column_count" />
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/navigation_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+        app:layout_gravity="bottom|center"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2883974575291426/5812076995">
+    </com.google.android.gms.ads.AdView>
+
+</android.support.v7.widget.GridLayout>
